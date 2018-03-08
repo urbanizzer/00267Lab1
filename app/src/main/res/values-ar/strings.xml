@@ -4,5 +4,8 @@
     <string name="hello_message">أهلا بالعام!</string>
     <string name="ButtonText">اضغط من هنا</string>
     <string name="content_Login">Login</string>
+    <string name="Login_name">Login name</string>
+    <string name="Pass_word">Password</string>
+
 
 </resources>

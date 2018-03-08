@@ -2,6 +2,10 @@
     <string name="app_name">201600267Lab1</string>
     <string name="hello_message">Hello World!</string>
     <string name="ButtonText">I\’m a button</string>
+
     <string name="title_activity_login">LoginActivity</string>
     <string name="content_Login">Login</string>
+    <string name="Login_name">Login name</string>
+    <string name="Pass_word">Password</string>
+    <string name="Pass_word1">Password</string>
 </resources>
