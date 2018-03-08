@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مختبر واحد</string>
+    <string name="hello_message">أهلا بالعام!</string>
+    <string name="ButtonText">اضغط من هنا</string>
+</resources>
