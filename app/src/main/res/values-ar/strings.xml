@@ -3,9 +3,16 @@
     <string name="app_name">مختبر واحد</string>
     <string name="hello_message">أهلا بالعام!</string>
     <string name="ButtonText">اضغط من هنا</string>
+
+    <string name="title_activity_login">LoginActivity</string>
     <string name="content_Login">Login</string>
     <string name="Login_name">Login name</string>
     <string name="Pass_word">Password</string>
+    <string name="Pass_word1">Password</string>
 
+    <string name="Radio_Button">Radio Button</string>
+    <string name="Check_Box">Check Box</string>
+    <string name="Enable_Something">Enable Something</string>
+    <string name="desc_ription">btn_star_big_on</string>
 
 </resources>
