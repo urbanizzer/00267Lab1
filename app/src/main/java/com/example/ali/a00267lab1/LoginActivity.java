@@ -5,9 +5,14 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
 public class LoginActivity extends AppCompatActivity {
+
+    protected static final String ACTIVITY_NAME = "StartActivity";
+Log.i(ACTIVITY_NAME,"In onCreate()")
+            Log.i(ACTIVITY_NAME,"In onResume()")
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,5 +30,57 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
+    protected void onStart() {
+        super.onStart();
+
+        protected static final String ACTIVITY_NAME = "StartActivity";
+        Log.i(ACTIVITY_NAME, "In onCreate()");
+        Log.i(ACTIVITY_NAME, "In onResume()");
+
+
+    }
+
+    protected void onResume() {
+        super.onResume();
+
+        protected static final String ACTIVITY_NAME = "StartActivity";
+        Log.i(ACTIVITY_NAME, "In onCreate()");
+        Log.i(ACTIVITY_NAME, "In onResume()");
+
+
+    }
+
+    protected void onPause() {
+        super.onPause();
+
+        protected static final String ACTIVITY_NAME = "StartActivity";
+        Log.i(ACTIVITY_NAME, "In onCreate()");
+        Log.i(ACTIVITY_NAME, "In onResume()");
+
+
+    }
+
+    protected void onStop() {
+        super.onStop();
+
+        protected static final String ACTIVITY_NAME = "StartActivity";
+        Log.i(ACTIVITY_NAME, "In onCreate()");
+        Log.i(ACTIVITY_NAME, "In onResume()");
+
+
+    }
+
+    protected void onDestroy() {
+        super.onDestroy();
+
+        protected static final String ACTIVITY_NAME = "StartActivity";
+        Log.i(ACTIVITY_NAME, "In onCreate()");
+        Log.i(ACTIVITY_NAME, "In onResume()");
+
+
+    }
+
+
 
 }
