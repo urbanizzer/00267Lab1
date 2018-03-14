@@ -5,9 +5,12 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 
 public class LoginActivity extends AppCompatActivity {
+
+    protected static final String ACTIVITY_NAME = "StartActivity";
 
 
     @Override
@@ -16,6 +19,8 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Log.i(ACTIVITY_NAME, "In onCreate");
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -30,29 +35,27 @@ public class LoginActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
+        Log.i(ACTIVITY_NAME, "In onStart");
     }
 
     protected void onResume() {
         super.onResume();
-
+        Log.i(ACTIVITY_NAME, "In onResume");
     }
 
     protected void onPause() {
         super.onPause();
-
-
+        Log.i(ACTIVITY_NAME, "In onPause");
     }
 
     protected void onStop() {
         super.onStop();
-
-
+        Log.i(ACTIVITY_NAME, "In onStop");
     }
 
     protected void onDestroy() {
         super.onDestroy();
-
-
+        Log.i(ACTIVITY_NAME, "In onDestroy");
     }
 
 
