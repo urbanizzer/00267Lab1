@@ -14,5 +14,7 @@
     <string name="Check_Box"> خانة الاختيار</string>
     <string name="Enable_Something"> تمكن شيء</string>
     <string name="desc_ription">btn_star_big_on</string>
+    <string name="Log_in1">نشاط تسجيل الدخول</string>
+
 
 </resources>

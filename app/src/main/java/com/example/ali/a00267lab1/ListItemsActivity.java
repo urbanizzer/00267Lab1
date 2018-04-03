@@ -2,20 +2,18 @@ package com.example.ali.a00267lab1;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
-import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.Toast;
 
 public class ListItemsActivity extends AppCompatActivity {
 
     protected static final String ACTIVITY_NAME = "ListItemsActivity";
-    static final int REQUEST_IMAGE_CAPTURE = 1;
-
+    private static final int CAMERA_REQUEST = 1888;
+    android.widget.ImageButton ImageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,17 +31,16 @@ public class ListItemsActivity extends AppCompatActivity {
                     Toast.makeText(ListItemsActivity.this, "Switch Off", Toast.LENGTH_SHORT).show();
                 }
 
-                ImageButton fab = findViewById(R.id.imageButton3);
-                fab.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
-                            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
 
-                        }
-                    }
-                });
+            }
+        });
+
+        ImageButton = findViewById(R.id.imageButton3);
+        ImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(cameraIntent, CAMERA_REQUEST);
             }
         });
 
