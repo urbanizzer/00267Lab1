@@ -16,4 +16,10 @@
     <string name="Log_in1">Login</string>
 
 
+    <string name="dialog_message"> do you want to close the Activity</string>
+    <string name="dialog_title"> Exist</string>
+    <string name="ok"> ok </string>
+    <string name="cancel"> cancel </string>
+
+
 </resources>
