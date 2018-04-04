@@ -1,6 +1,8 @@
 package com.example.ali.a00267lab1;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -45,6 +47,17 @@ public class ListItemsActivity extends AppCompatActivity {
         });
 
     }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if (requestCode == CAMERA_REQUEST && resultCode == Activity.RESULT_OK) {
+            Bitmap photo = (Bitmap) data.getExtras().get("data");
+            ImageButton.setImageBitmap(photo);
+        }
+    }
+
 
     protected void onStart() {
         super.onStart();
