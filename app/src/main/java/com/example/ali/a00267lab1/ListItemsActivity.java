@@ -26,6 +26,7 @@ public class ListItemsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_items);
         Log.i(ACTIVITY_NAME, "in onCreate()");
         Toast.makeText(ListItemsActivity.this, "onCreate test toast", Toast.LENGTH_LONG).show();
+
         Switch mySwitch = findViewById(R.id.switch1);
         mySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

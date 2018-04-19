@@ -16,5 +16,15 @@
     <string name="desc_ription">btn_star_big_on</string>
     <string name="Log_in1">نشاط تسجيل الدخول</string>
 
+    <string name="ButtonText2"> بدأ الدردشه</string>
+    <string name="name">الاسم</string>
+
+    <string name="click"> انقر </string>
+    <string name="message"> رسالة </string>
+    <string name="send"> إرسال </string>
+    <string name="NewText1"> النص الجديد </string>
+    <string name="NewText"> النص الجديد </string>
+
+
 
 </resources>
